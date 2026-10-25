@@ -144,7 +144,7 @@
     document.body.classList.toggle('lights-dimmed', lightsDimmed);
     const instruction = $('#cakeInstruction');
     if (instruction) instruction.textContent = lightsDimmed ? 'THE WORLD CAN WAIT. MAKE YOUR WISH.' : 'TAP THE CAKE TO DIM THE LIGHTS';
-    if (lightsDimmed) showToast('Take a breath. This moment is yours.');
+    if (lightsDimmed) showToast('Take a breath. This moment is yours cutiepie.');
   }
   const cake = $('#cakeArt');
   on(cake, 'click', toggleLights);
@@ -154,7 +154,7 @@
 
   on($('#wishButton'), 'click', () => {
     const wishButton = $('#wishButton');
-    if (candlesBlown) { showToast('Your wish has been sent into the universe ✦'); return; }
+    if (candlesBlown) { showToast('Nancy your wish has been sent into the universe ✦'); return; }
     candlesBlown = true; lightsDimmed = true;
     document.body.classList.add('lights-dimmed');
     $$('.candle i').forEach(flame => { flame.style.opacity = '0'; flame.style.filter = 'none'; });
@@ -166,7 +166,7 @@
     });
     const instruction = $('#cakeInstruction');
     if (instruction) instruction.textContent = 'WISH MADE. LET THE MAGIC BEGIN.';
-    if (wishButton) wishButton.innerHTML = '<span>YOUR WISH IS OUT THERE NOW</span><b>♡</b>';
+    if (wishButton) wishButton.innerHTML = '<span>NANCY YOUR WISH IS OUT THERE NOW</span><b>♡</b>';
     burst(220);
     window.setTimeout(() => { const finale = $('#finale'); if (finale) finale.scrollIntoView({ behavior: 'smooth' }); }, 900);
   });
